@@ -1,4 +1,3 @@
-<!-- Cole aqui o conteúdo do pom.xml pai que foi gerado na resposta anterior -->
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -7,12 +6,12 @@
     <groupId>com.maran.core</groupId>
     <artifactId>jm-core-parent</artifactId>
     <version>1.0.0-SNAPSHOT</version>
-    <packaging>pom</packaging>
+    <packaging>pom</packaging> <!-- ESSENCIAL: Define este como um POM de gerenciamento -->
     <name>JM-Core :: Parent</name>
     <description>Parent POM for the JM-Core Monorepo</description>
 
+    <!-- Os módulos dos serviços serão adicionados aqui no futuro -->
     <modules>
-        <!-- Adicionaremos os módulos aqui conforme forem criados -->
     </modules>
 
     <properties>
@@ -23,6 +22,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
+    <!-- Gerencia as versões para todos os módulos filhos -->
     <dependencyManagement>
         <dependencies>
             <dependency>
